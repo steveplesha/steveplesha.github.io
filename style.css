@@ -1,0 +1,33 @@
+nav ul li {
+	display: inline;
+	padding-right: 1em;
+
+}
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+body:before {
+	content: "";
+	background-color: black;
+	height: 0.625em;
+	display: block;
+}
+
+body {
+	margin: 0;
+	background-color: #34495e;
+}
+
+nav, footer {
+	background-color: #2c3e50;
+	height: 2em;
+	color: white;
+	line-height: 1.9em;
+}
+
+#container {
+	background-color: #95a5a6;
+	height: 30em;
+}

@@ -1,8 +1,27 @@
+nav ul {
+	text-align: center;
+}
+
 nav ul li {
 	display: inline;
-	padding-right: 1em;
-
+	padding-right: 2em;
+	top: 1em;
 }
+
+nav ul li a{
+	color: white;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+#logo {
+	height: 5em;
+	height: 5em;
+	width: 20em;
+}
+
 #container {
 	width: 80%;
 	margin: auto;

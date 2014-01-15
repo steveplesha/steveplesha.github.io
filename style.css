@@ -1,15 +1,17 @@
+html {
+	font-family: 'Droid Sans', sans-serif;
+}
+
 #logo {
 	background: url("img/logo.png") no-repeat;
 	background-size: contain;
 	margin: 0 auto;
 	height: 7.375em;
 	width: 18.75em;
-	
 }
 
 nav {
 	margin-top: 0;
-	background-color: #2c3e50;
 	height: 4em;
 	color: white;
 	line-height: 4.0em;
@@ -39,28 +41,31 @@ nav ul li a:hover {
 
 body {
 	margin: 0;
-	background-color: #0b5fa5;
+	background-color: #ccc;
 }
 
-body:before {
-	content: "";
-	background-color: black;
-	height: 0.625em;
-	display: block;
+
+#header, footer {
+	background-color: #555;
+}
+
+#main {
+	background-color: #ccc;
 }
 
 #container {
-	width: 80%;
+	width: 75%;
 	margin: auto;
-	background-color: #66a1d2;
 	height: 30em;
+	padding: 10px;
+	background-color: #eee;
 }
 
 footer {
 	margin-top: 0;
-	background-color: #3f8fd2;
 	height: 8em;
 	color: black;
 	line-height: 1.9em;
 	bottom: 0;
+	padding: 10px;
 }

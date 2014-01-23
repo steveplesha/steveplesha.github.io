@@ -69,3 +69,8 @@ footer {
 	bottom: 0;
 	padding: 10px;
 }
+
+footer ul li {
+	display: inline;
+	padding-right: 1em;
+}

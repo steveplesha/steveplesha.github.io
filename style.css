@@ -10,6 +10,10 @@ html {
 	width: 18.75em;
 }
 
+h1 , h3{
+	font-family: 'Droid Serif', serif;
+}
+
 nav {
 	margin-top: 0;
 	height: 4em;
@@ -53,7 +57,7 @@ body {
 	background-color: #ccc;
 }
 
-#container {
+#container, #resume {
 	width: 75%;
 	margin: auto;
 	height: 30em;
@@ -61,6 +65,22 @@ body {
 	background-color: #eee;
 }
 
+#resume h3.jobtitle, h3 p {
+	padding-left: 2em;
+}
+
+#phone_contact {
+	list-style-image: url('img/phone.png');
+}
+
+#email_contact {
+	list-style-image: url('img/email.png');
+}
+
+#phone_contact a ,#email_contact  a {
+	text-decoration: none;
+}
+	
 footer {
 	margin-top: 0;
 	height: 8em;
@@ -70,7 +90,7 @@ footer {
 	padding: 10px;
 }
 
-footer ul li {
+#social_icons ul li {
 	display: inline;
 	padding-right: 1em;
 }

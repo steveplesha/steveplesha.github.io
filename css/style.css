@@ -3,7 +3,7 @@ html {
 }
 
 #logo {
-	background: url("img/logo.png") no-repeat;
+	background: url("../img/logo.png") no-repeat;
 	background-size: contain;
 	margin: 0 auto;
 	height: 6.34em;
@@ -56,11 +56,11 @@ body {
 }
 
 #phone_contact {
-	list-style-image: url('img/phone.png');
+	list-style-image: url('../img/phone.png');
 }
 
 #email_contact {
-	list-style-image: url('img/email.png');
+	list-style-image: url('../img/email.png');
 }
 
 #phone_contact a ,#email_contact  a {

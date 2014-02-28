@@ -2,6 +2,13 @@ html {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+h1, ul {
+-webkit-margin-before: 0;
+}
+p, ul {
+-webkit-margin-after: 0;
+}
+
 #logo {
 	background: url("../img/logo.png") no-repeat;
 	background-size: contain;
@@ -45,13 +52,13 @@ body {
 }
 
 #about {
-	background-color: #99DB96;
-	margin: 1em 0 0 1em;
+	background-color: #ecf0f1;
+	
 }
 
 
 #resume {
-	background-color: #E9B4B4;
+	background-color: #95a5a6;
 }
 
 #resume h3.jobtitle, h3 p {
@@ -59,7 +66,7 @@ body {
 }
 
 #contact {
-	background-color: #B8A2E7;
+	background-color: #7f8c8d;
 	min-height: 10em;
 }
 

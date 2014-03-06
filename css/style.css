@@ -42,6 +42,10 @@ body {
 	background-color: #ccc;
 }
 
+.content {
+	padding: 5em;
+}
+
 
 #header, footer {
 	background-color: #555;

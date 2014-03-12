@@ -26,15 +26,22 @@ nav {
 	text-align: center;
 }
 
-nav a {
-	padding: 1.4em;
-	color: #fff;
+nav ul li { 
 	text-decoration: none;
+	list-style-type: none;
 }
 
-nav a:hover {
-	color: black;
-	background-color: #fff;
+nav ul li a { 
+	padding: 1.4em;	
+	color: #fff;
+	transition: background 0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out; 
+}
+
+nav ul li a:hover {
+	color: #000;
+	background: #fff;
+	text-decoration: none;
 }
 
 body {
@@ -47,7 +54,7 @@ body {
 }
 
 
-#header, footer {
+header, footer {
 	background-color: #555;
 }
 
@@ -89,13 +96,21 @@ body {
 footer {
 	margin-top: 0;
 	height: 8em;
-	color: black;
+	color: #000;
 	line-height: 1.9em;
 	bottom: 0;
 	padding: 10px;
 }
 
 #social_icons ul li {
-	display: inline;
+	display: inline-block;
 	padding-right: 1em;
 }
+
+/*	Media Queries
+**************************************/
+
+@media only screen and (min-width: 768px) {
+	nav ul li { display: inline-block; }
+	
+	}

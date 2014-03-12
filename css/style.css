@@ -72,6 +72,11 @@ header, footer {
 	background-color: #95a5a6;
 }
 
+#resume h1 + p {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 3px;
+}
+
 #resume h3.jobtitle, h3 p {
 	padding-left: 2em;
 }

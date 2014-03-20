@@ -5,6 +5,7 @@ html {
 h1, ul {
 -webkit-margin-before: 0;
 }
+
 p, ul {
 -webkit-margin-after: 0;
 }
@@ -29,11 +30,13 @@ nav {
 nav ul li { 
 	text-decoration: none;
 	list-style-type: none;
+    margin-right: 1.5em;
 }
 
 nav ul li a { 
-	padding: 1.4em;	
-	color: #fff;
+    border: 1px solid #fff;
+    color: #fff;
+        padding: 1em 1.5em;	
 	transition: background 0.3s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out; 
 }
@@ -111,6 +114,17 @@ footer {
 	display: inline-block;
 	padding-right: 1em;
 }
+
+#social_icons img {
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+
+#social_icons img:hover {
+    opacity: 1;
+}
+
 
 /*	Media Queries
 **************************************/

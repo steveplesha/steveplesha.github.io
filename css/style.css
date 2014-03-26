@@ -1,44 +1,32 @@
-html {
-	font-family: 'Droid Sans', sans-serif;
-}
+html { font-family: 'Droid Sans', sans-serif; }
 
-h1, ul {
--webkit-margin-before: 0;
-}
+.heading { font-family: 'Droid Serif', serif; }
 
-p, ul {
--webkit-margin-after: 0;
-}
+a { color: #fff; }
 
 #logo {
 	background: url("../img/logo.png") no-repeat;
 	background-size: contain;
-	margin: 0 auto;
 	height: 6.34em;
 	width: 18.75em;
 }
 
-h1 , h3{
-	font-family: 'Droid Serif', serif;
-}
-
-nav {
-	line-height: 4.0em;
-	text-align: center;
-}
+nav { text-align: center; }
 
 nav ul li { 
 	text-decoration: none;
 	list-style-type: none;
-    margin-right: 1.5em;
+    width: 8em;
 }
 
 nav ul li a { 
-    border: 1px solid #fff;
+    border: 3px solid #fff;
+    font-size: 1.2em;
     color: #fff;
-        padding: 1em 1.5em;	
-	transition: background 0.3s ease-in-out;
+    padding: 0.5em 1em;	
 	-webkit-transition: background 0.3s ease-in-out; 
+    	    transition: background 0.3s ease-in-out;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -48,7 +36,6 @@ nav ul li a:hover {
 }
 
 body {
-	margin: 0;
 	background-color: #ccc;
 }
 
@@ -80,7 +67,8 @@ header, footer {
 	padding-bottom: 3px;
 }
 
-#resume h3.jobtitle, h3 p {
+#resume h3.jobtitle, 
+h3 p {
 	padding-left: 2em;
 }
 
@@ -88,6 +76,12 @@ header, footer {
 	background-color: #7f8c8d;
 	min-height: 10em;
 }
+
+#phone_contact,
+#email_contact {
+    font-size: 4em;
+    margin-left: 1.5em;
+}    
 
 #phone_contact {
 	list-style-image: url('../img/phone.png');
@@ -97,7 +91,8 @@ header, footer {
 	list-style-image: url('../img/email.png');
 }
 
-#phone_contact a ,#email_contact  a {
+#phone_contact a,
+#email_contact  a {
 	text-decoration: none;
 }
 	
@@ -117,19 +112,18 @@ footer {
 
 #social_icons img {
     opacity: 0.4;
-    transition: opacity 0.3s ease-in-out;
 	-webkit-transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
 }
 
-#social_icons img:hover {
-    opacity: 1;
-}
+#social_icons img:hover { opacity: 1; }
 
 
 /*	Media Queries
 **************************************/
 
 @media only screen and (min-width: 768px) {
-	nav ul li { display: inline-block; }
-	
+	nav ul li { 
+        margin-right: 1.5em;
+        display: inline-block; }
 	}

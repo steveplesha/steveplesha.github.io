@@ -1,8 +1,16 @@
 html { font-family: 'Droid Sans', sans-serif; }
 
+body { 
+    margin: 0; 
+    background-color: #555;
+}
+
 .heading { font-family: 'Droid Serif', serif; }
 
-a { color: #fff; }
+a { 
+    color: #fff; 
+    text-decoration: none;
+}
 
 #logo {
 	background: url("../img/logo.png") no-repeat;
@@ -11,20 +19,27 @@ a { color: #fff; }
 	width: 18.75em;
 }
 
-nav { text-align: center; }
+nav { 
+    text-align: center; 
+}
+
+nav ul { -webkit-padding-start: 0; } <!-- Prevent Chrome from adding padding to start of unordered lists -->
+
 
 nav ul li { 
 	text-decoration: none;
 	list-style-type: none;
-    width: 8em;
+    margin-bottom: 5px;
 }
 
-nav ul li a { 
+a.btn { 
     border: 3px solid #fff;
     font-size: 1.2em;
     color: #fff;
     padding: 0.5em 1em;	
-	-webkit-transition: background 0.3s ease-in-out; 
+    -webkit-border-radius: 5px;
+	        border-radius: 5px;
+    -webkit-transition: background 0.3s ease-in-out; 
     	    transition: background 0.3s ease-in-out;
     display: block;
 }
@@ -35,16 +50,17 @@ nav ul li a:hover {
 	text-decoration: none;
 }
 
-body {
-	background-color: #ccc;
-}
-
 .content {
 	padding: 5em;
 }
 
+ul,
+ol {
+    margin-top: 13px;
+}
 
-header, footer {
+header,
+footer {
 	background-color: #555;
 }
 
@@ -125,5 +141,8 @@ footer {
 @media only screen and (min-width: 768px) {
 	nav ul li { 
         margin-right: 1.5em;
-        display: inline-block; }
+        display: inline-block; 
+        width: 8em;
+    }
+    
 	}

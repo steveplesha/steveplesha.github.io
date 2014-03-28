@@ -1,11 +1,11 @@
 html { font-family: 'Droid Sans', sans-serif; }
 
+.heading { font-family: 'Droid Serif', serif; }
+
 body { 
     margin: 0; 
     background-color: #555;
 }
-
-.heading { font-family: 'Droid Serif', serif; }
 
 a { 
     color: #fff; 
@@ -17,20 +17,16 @@ a {
 	background-size: contain;
 	height: 6.34em;
 	width: 18.75em;
+    margin: auto;
 }
 
 nav { 
     text-align: center; 
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-nav ul { -webkit-padding-start: 0; } <!-- Prevent Chrome from adding padding to start of unordered lists -->
-
-
-nav ul li { 
-	text-decoration: none;
-	list-style-type: none;
-    margin-bottom: 5px;
-}
+nav ul { -webkit-padding-start: 0; }  /* Removing padding added by Chrome */
 
 a.btn { 
     border: 3px solid #fff;
@@ -42,12 +38,12 @@ a.btn {
     -webkit-transition: background 0.3s ease-in-out; 
     	    transition: background 0.3s ease-in-out;
     display: block;
+    margin-bottom: 5px;
 }
 
-nav ul li a:hover {
+a.btn:hover {
 	color: #000;
 	background: #fff;
-	text-decoration: none;
 }
 
 .content {
@@ -62,6 +58,7 @@ ol {
 header,
 footer {
 	background-color: #555;
+    min-height: 6.3em;
 }
 
 #main {
@@ -139,10 +136,11 @@ footer {
 **************************************/
 
 @media only screen and (min-width: 768px) {
-	nav ul li { 
+    nav ul li { 
         margin-right: 1.5em;
         display: inline-block; 
         width: 8em;
+        margin-bottom: 5px;
     }
     
-	}
+}

@@ -12,21 +12,33 @@ a {
     text-decoration: none;
 }
 
-#logo {
-	background: url("../img/logo.png") no-repeat;
-	background-size: contain;
-	height: 6.34em;
-	width: 18.75em;
-    margin: auto;
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
 }
 
-nav { 
+
+.content { padding: 1.2em; }
+
+.logo {
+	color: #fff;
+}
+
+.main-nav { 
     text-align: center; 
     margin-left: 5px;
     margin-right: 5px;
 }
 
 nav ul { -webkit-padding-start: 0; }  /* Removing padding added by Chrome */
+
+nav ul li { 
+    display: block;
+}
 
 a.btn { 
     border: 3px solid #fff;
@@ -35,8 +47,6 @@ a.btn {
     padding: 0.5em 1em;	
     -webkit-border-radius: 5px;
 	        border-radius: 5px;
-    -webkit-transition: background 0.3s ease-in-out; 
-    	    transition: background 0.3s ease-in-out;
     display: block;
     margin-bottom: 5px;
 }
@@ -44,10 +54,6 @@ a.btn {
 a.btn:hover {
 	color: #000;
 	background: #fff;
-}
-
-.content {
-	padding: 5em;
 }
 
 ul,
@@ -92,7 +98,7 @@ h3 p {
 
 #phone_contact,
 #email_contact {
-    font-size: 4em;
+    font-size: 3rem;
     margin-left: 1.5em;
 }    
 
@@ -131,12 +137,54 @@ footer {
 
 #social_icons img:hover { opacity: 1; }
 
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../img/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(../img/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
 
 /*	Media Queries
 **************************************/
 
-@media only screen and (min-width: 768px) {
-    nav { float: right; }
+@media screen and (min-width: 768px) {
+    .main-nav { 
+        float: right; 
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 4px;
+    }
     
     nav ul li { 
         margin-right: 1.5em;
@@ -144,5 +192,13 @@ footer {
         width: 8em;
         margin-bottom: 5px;
     }
-    
+
+    .content { padding: 5em; }   
+
+    #logo { margin: 0; }
+
+    a.btn {
+        -webkit-transition: background 0.3s ease-in-out; 
+    	    transition: background 0.3s ease-in-out;
+}
 }

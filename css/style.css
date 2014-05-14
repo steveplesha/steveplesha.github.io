@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+.left { float: left; }
+
+.right { float: right; }
+
 .group:before,
 .group:after {
     content: "";
@@ -21,17 +25,23 @@ a {
     clear: both;
 }
 
+header { padding: 10px; }
 
 .content { padding: 1.2em; }
 
-.logo {
-	color: #fff;
+.title { color: #fff; }
+
+.logo { 
+    width: 100px; 
+    float: left;
+    margin-right: 20px;
 }
 
 .main-nav { 
     text-align: center; 
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 30px;
 }
 
 nav ul { -webkit-padding-start: 0; }  /* Removing padding added by Chrome */
@@ -179,11 +189,20 @@ footer {
 **************************************/
 
 @media screen and (min-width: 768px) {
+    header { padding: 50px; }
+    
+    .logo { 
+        float: left;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .title { float: left; }
+    
     .main-nav { 
         float: right; 
         margin-left: 0;
         margin-right: 0;
-        margin-top: 4px;
     }
     
     nav ul li { 

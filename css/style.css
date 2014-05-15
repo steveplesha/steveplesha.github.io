@@ -102,7 +102,7 @@ ol {
 
 header,
 footer {
-	background-color: #555;
+	background: linear-gradient( #555, #558 );
     min-height: 6.3em;
 }
 
@@ -141,17 +141,14 @@ h3 p {
     margin-left: 1.5em;
 }    
 
-#phone_contact {
-	list-style-image: url('../img/phone.png');
+li.phone_contact {
+	background: url('../img/phone.png') left no-repeat;
+    background-size: 8%;
 }
 
-#email_contact {
-	list-style-image: url('../img/email.png');
-}
-
-#phone_contact a,
-#email_contact  a {
-	text-decoration: none;
+li.email_contact {
+	background: url('../img/email.png') left no-repeat;
+    background-size: 8%;
 }
 	
 footer {

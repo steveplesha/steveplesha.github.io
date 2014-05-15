@@ -27,21 +27,50 @@ a {
 
 header { padding: 10px; }
 
+.container { 
+    width: 70%;
+    margin: 0 auto;
+}
+
 .content { padding: 1.2em; }
 
 .title { color: #fff; }
 
 .logo { 
-    width: 100px; 
+    width: 15%; 
     float: left;
-    margin-right: 20px;
+    margin-right: 2px;
 }
+
+
+.corporatix { 
+    padding: 20px;
+    background-color: #3498db; 
+}
+
+.corporatix figure { 
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.corporatix img {
+    box-shadow: 4px 4px 10px black;
+    border: 2px solid #fff;
+    margin-bottom:3px;
+}
+
+.portfolio-right { float: right; }
+
+.title h1 { font-size: 2.6em; }
+
+.title h3 { text-align: center; }
 
 .main-nav { 
     text-align: center; 
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 30px;
 }
 
 nav ul { -webkit-padding-start: 0; }  /* Removing padding added by Chrome */
@@ -88,7 +117,7 @@ footer {
 
 
 #resume {
-	background-color: #95a5a6;
+	background-color: #2ecc71;
 }
 
 #resume h1 + p {
@@ -102,7 +131,7 @@ h3 p {
 }
 
 #contact {
-	background-color: #7f8c8d;
+	background-color: #8e44ad;
 	min-height: 10em;
 }
 
@@ -192,9 +221,8 @@ footer {
     header { padding: 50px; }
     
     .logo { 
-        float: left;
         width: 100px;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .title { float: left; }
@@ -203,6 +231,7 @@ footer {
         float: right; 
         margin-left: 0;
         margin-right: 0;
+        margin-top: 30px;
     }
     
     nav ul li { 

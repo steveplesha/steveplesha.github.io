@@ -28,6 +28,12 @@ ul { -webkit-padding-start: 0; }
 
 header { padding: 10px; }
 
+header,
+footer {
+	background: linear-gradient(#A1A1D8, #558);
+    min-height: 6.3em;
+}
+
 .title { color: #fff; }
 
 .logo { 
@@ -97,12 +103,6 @@ a.btn:hover {
 ul,
 ol {
     margin-top: 13px;
-}
-
-header,
-footer {
-	background-color: #558;
-    min-height: 6.3em;
 }
 
 #resume {

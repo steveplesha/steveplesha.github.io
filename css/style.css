@@ -8,10 +8,6 @@ body {
 
 ul { -webkit-padding-start: 0; }
 
-.left { float: left; }
-
-.right { float: right; }
-
 .content { 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -63,9 +59,11 @@ footer {
     font-weight: bold;
 }
 
-.portfolio-item img {
+.portfolio-item-image {
     box-shadow: 4px 4px 10px #000;
     margin-bottom:3px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sixrevisions {
@@ -206,6 +204,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .left { float: left; }
+
+    .right { float: right; }
+    
     header { padding: 50px; }
     
     .logo { 
@@ -241,6 +243,14 @@ footer {
     .container { 
         width: 70%;
         margin: 0 auto;
+    }
+
+    #portfolio figure { width: 35%; }
+
+    .portfolio-item-description { width: 60%; }
+
+    .portfolio-item-image { 
+        width: 60%;
     }
 
     .phone,

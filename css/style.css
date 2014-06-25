@@ -26,6 +26,8 @@ ul { -webkit-padding-start: 0; }
     clear: both;
 }
 
+.center-text { text-align: center; }
+
 header { padding: 10px; }
 
 header,
@@ -44,16 +46,23 @@ footer {
     margin-right: 2px;
 }
 
-#portfolio { background-color: #ffe6C2; }
+#portfolio { 
+    background-color: #ffe6C2; 
+    padding-top: 3.6em;
+    padding-bottom: 3.6em;
+}
 
 .portfolio-item {
-    border-bottom: 1px solid #fefefe;
     padding-bottom: 20px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 13px 12px -12px #aa9797;
+    background-color: rgba(0, 0, 255, 0.17);
+    padding: 15px;
 }
 
-.corporatix { 
+.corporatix,
+.minim,
+.sixrevisions { 
     padding: 20px;
 }
 
@@ -66,10 +75,6 @@ footer {
 .portfolio-item img {
     box-shadow: 4px 4px 10px #000;
     margin-bottom:3px;
-}
-
-.sixrevisions {
-    padding: 20px;
 }
 
 .title h1 { font-size: 2.6em; }
@@ -87,7 +92,7 @@ nav ul { -webkit-padding-start: 0; }  /* Removing padding added by Chrome */
 nav ul li { display: block; }
 
 a.btn { 
-    border: 3px solid #fff;
+    border: 1px solid #fff;
     font-size: 1.2em;
     color: #fff;
     padding: 0.5em 1em;	
@@ -225,18 +230,18 @@ footer {
         display: inline-block; 
         width: 8em;
         margin-bottom: 5px;
-    }
-
-    .content { padding: 5em; }   
+    }  
 
     #logo { margin: 0; }
 
     a.btn {
         -webkit-transition: background 0.3s ease-in-out; 
-    	    transition: background 0.3s ease-in-out;
+    	        transition: background 0.3s ease-in-out;
     }
     
-    .content { padding: 3.6em; }
+    .content { 
+        padding-top: 3.6em;
+    }
 
     .container { 
         width: 70%;

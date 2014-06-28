@@ -43,7 +43,7 @@ footer {
 }
 
 #portfolio { 
-    background-color: #ffe6C2; 
+    background: url("../img/portfoliobkg.jpg");
     padding-top: 3.6em;
     padding-bottom: 3.6em;
 }
@@ -52,9 +52,12 @@ footer {
     padding-bottom: 20px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 13px 12px -12px #aa9797;
-    background-color: rgba(0, 0, 255, 0.17);
+    background-color: rgba(0, 0, 255, 0.5);
     padding: 15px;
+    color: #fff;
 }
+
+#portfolio a { color: #BDE0FF; }
 
 .corporatix,
 .minim,
@@ -63,7 +66,7 @@ footer {
 }
 
 #portfolio figure {
-    color: #000;
+    color: #fff;
     text-align: center;
     font-weight: bold;
 }

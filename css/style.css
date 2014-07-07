@@ -13,6 +13,7 @@ ul { -webkit-padding-start: 0; }
     padding-bottom: 1em;
 }  
 
+/* Clearfix */
 .group:before,
 .group:after {
     content: "";
@@ -24,24 +25,40 @@ ul { -webkit-padding-start: 0; }
 
 .center-text { text-align: center; }
 
-header { 
-    padding: 10px; 
-}
 
-header,
 footer {
 	background: linear-gradient(#A1A1D8, #558);
     background-image: url('../img/texture.jpg');
     min-height: 6.3em;
 }
 
-.title { color: #fff; }
+
+header {
+    padding: 10px; 
+    background-image: url(../img/navypier.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #3e3e3e;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.title { 
+    position: relative;
+    width: 100%;
+    top: 20%;
+    text-align: center;
+    color: #fff; }
 
 .logo { 
     width: 15%; 
-    float: left;
-    max-width: 60px;
-    max-height: 83px;
+    /*max-width: 60px;
+    max-height: 83px;*/
     margin-right: 2px;
 }
 
@@ -83,9 +100,9 @@ footer {
     margin-right: auto;
 }
 
-.title h1 { font-size: 2.6em; }
+.title h1 { font-size: 5.6em; }
 
-.title h3 { text-align: center; }
+.title h3 { font-size: 5.6rem; }
 
 .main-nav { 
     text-align: center; 
@@ -103,12 +120,13 @@ nav ul li { display: block; }
 
 a.btn { 
     border: 1px solid #fff;
-    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
     color: #fff;
-    background-color: rgba(90, 131, 218, 0.79);
     padding: 0.5em 1em;	
     display: block;
     margin-bottom: 5px;
+    border-radius: 0;
 }
 
 a.btn:hover {
@@ -179,7 +197,7 @@ footer {
 **************************************/
 
 @media screen and (min-width: 1000px) {
-    .main-nav { float: right; }
+    /*.main-nav { float: right; } */
 
     .portfolio-image-item { width: initial; max-width: initial; }
 }
@@ -194,7 +212,12 @@ footer {
         margin-right: 20px;
     }
     
-    .main-nav { margin: 0 auto 0 auto; }
+    .main-nav { 
+        margin: 0 auto 0 auto; 
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
     
     nav { margin: 0; }
 
@@ -224,19 +247,22 @@ footer {
         margin: 0 auto;
     }
 
-    header { 
+    header { position: relative; }
+    
+    .header { 
         padding: 50px;
-        position: fixed;
+        position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
-        z-index: 1000;
+        height: 100%;
         overflow: hidden;
+    }
+        /*
         -webkit-transition: height 0.3s;
            -moz-transition: height 0.3s;
                 transition: height 0.3s;
     }
-    
+
     header.shrink {
         padding: 0;
         height: 80px;
@@ -270,9 +296,7 @@ footer {
         margin-right: 10px;
         margin-top: 10px;
         margin-left: 10px;
-    }
-
-    #about { margin-top: 215px; }
+    } */
 
     #portfolio figure { width: 35%; }
 

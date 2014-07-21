@@ -30,7 +30,6 @@ ul { -webkit-padding-start: 0; }
 
 footer {
 	background: linear-gradient(#A1A1D8, #558);
-    background-image: url('../img/texture.jpg');
     min-height: 6.3em;
 }
 

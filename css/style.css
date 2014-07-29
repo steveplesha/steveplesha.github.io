@@ -41,7 +41,7 @@ img.center {
 .title { 
     width: 100%;
     text-align: center;
-    color: #fff; }
+    color: #fff;
 }
 
 .logo { 
@@ -259,7 +259,6 @@ footer {
     .background {
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-position: 50% 50%\9 !important;
     }
 
 

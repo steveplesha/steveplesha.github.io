@@ -5,10 +5,6 @@ body { height: 100%; }
 
 .heading { font-family: 'Droid Serif', serif; }
 
-body { 
-    margin: 0; 
-}
-
 ul { -webkit-padding-start: 0; }
 
 .content { 
@@ -66,10 +62,8 @@ img.center {
 
 #portfolio a { color: #BDE0FF; }
 
-.corporatix,
-.minim,
-.sixrevisions { 
-    padding: 20px;
+.content { 
+    padding: 1.25em;
 }
 
 #portfolio figure {
@@ -215,6 +209,13 @@ footer {
         width: 8em;
         margin-bottom: 5px;
     }
+    
+    #about img {
+        max-width: 225px;
+        border: 1px solid #000;
+        padding: 3px;
+        display: block;
+    }
 
     .content { padding: 5em; }
 
@@ -285,7 +286,7 @@ footer {
 
     #social_icons img:hover {
         opacity: 1;
-}
+    }
 
 }
 
@@ -317,7 +318,7 @@ footer {
 	display:block;
 	overflow:hidden;
 	float:left;
-	opacity: 0;
+	     opacity: 0;
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
 }

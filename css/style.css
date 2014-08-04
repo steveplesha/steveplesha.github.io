@@ -29,6 +29,15 @@ footer {
     min-height: 6.3em;
 }
 
+#about img {
+    border: 1px solid #a2a2a2;
+    max-width: 225px;
+    width: 100%;
+    padding: 3px;
+    display: block;    
+    
+}
+
 img.center {
     display: block;
     margin: 0 auto;
@@ -48,6 +57,12 @@ img.center {
     background: url("../img/portfoliobkg.jpg");
     padding-top: 3.6em;
     padding-bottom: 3.6em;
+}
+
+#portfolio > div {
+    margin-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .portfolio-item {
@@ -176,12 +191,6 @@ footer {
 /*	Media Queries
 **************************************/
 
-@media screen and (min-width: 1000px) {
-    /*.main-nav { float: right; } */
-
-    .portfolio-image-item { width: initial; max-width: initial; }
-}
-
 @media screen and (min-width: 768px) {
     .left { float: left; }
 
@@ -189,9 +198,7 @@ footer {
     
     header { height: 100%; }
     
-    .logo { 
-        width: initial;
-    }
+    .logo { width: initial; }
     
     .main-nav { 
         margin: 0 auto 0 auto; 
@@ -209,27 +216,31 @@ footer {
         width: 8em;
         margin-bottom: 5px;
     }
-    
-    #about img {
-        max-width: 225px;
-        border: 1px solid #000;
-        padding: 3px;
-        display: block;
-    }
 
-    .content { padding: 5em; }
+    #portfolio > div {
+        margin-bottom: 5em;
+        padding-right: initial;
+        padding-left: initial;
+    }    
+    
+    #portfolio h1.heading {
+        margin-bottom: 2em;
+    }
+    
+    .content { 
+        padding-top: 5em; 
+        padding-bottom: 5em;
+        padding-right: initial;
+        padding-left: initial;
+    }
 
     a.btn {
         -webkit-transition: background 0.3s ease-in-out; 
     	        transition: background 0.3s ease-in-out;
     }
     
-    .content { 
-        padding-top: 3.6em;
-    }
-
     .container { 
-        width: 70%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -287,7 +298,23 @@ footer {
     #social_icons img:hover {
         opacity: 1;
     }
+}
 
+@media screen and (min-width: 1000px) {
+    /*.main-nav { float: right; } */
+
+    .portfolio-image-item { 
+        width: initial; 
+        max-width: initial; 
+    }
+    
+    .container {
+        width: 70%;
+    }
+    
+    #portfolio > div {
+        margin-bottom: 8em;
+    }
 }
 
 /*

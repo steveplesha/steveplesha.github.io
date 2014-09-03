@@ -1,0 +1,356 @@
+html { font-family: 'Droid Sans', sans-serif; }
+
+html,
+body { height: 100%; }
+
+.heading { font-family: 'Droid Serif', serif; }
+
+ul { -webkit-padding-start: 0; }
+
+.content { 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}  
+
+/* Clearfix */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+
+.center-text { text-align: center; }
+
+footer {
+	background: linear-gradient(#A1A1D8, #558);
+    min-height: 6.3em;
+}
+
+#about img {
+    border: 1px solid #a2a2a2;
+    max-width: 225px;
+    width: 100%;
+    padding: 3px;
+    display: block;    
+    
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.title { 
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.logo { 
+    width: 100px; 
+}
+
+#portfolio { 
+    background: url("../img/portfoliobkg.jpg");
+    background-attachment: fixed;
+    padding-top: 3.6em;
+    padding-bottom: 3.6em;
+}
+
+#portfolio > div {
+    margin-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.portfolio-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 13px 12px -12px #aa9797;
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+#portfolio a { color: #BDE0FF; }
+
+.content { 
+    padding: 1.25em;
+}
+
+#portfolio figure {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.portfolio-item-image {
+    box-shadow: 4px 4px 10px #000;
+    max-width: 100%;
+    margin-bottom:3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    h1 { font-size: 5.6em; }
+    h3 { font-size: 3.6rem; }
+} 
+
+.main-nav { 
+    text-align: center; 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul { /* Removing padding added by Chrome */
+    -webkit-padding-start: 0; 
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}  
+
+nav ul li { display: block; }
+
+a.btn { 
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.5em 1em;	
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 0;
+    &:hover { 
+        color: #000;
+        background: #fff;
+    }
+}
+
+ul,
+ol {
+    margin-top: 13px;
+}
+
+#resume {
+	background-color: #e7f3fd;
+}
+
+#resume h1 + p {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 3px;
+}
+
+#resume h3.jobtitle, 
+h3 p {
+	padding-left: 2em;
+}
+
+#resume ul { margin-left: 25px; }
+
+#contact {
+	background-color: #c0d8f6;
+	min-height: 10em;
+    ul { list-style: none; }
+}
+
+.phone,
+.email {
+    font-size: 2rem;
+    padding: 40px 0 30px 55px;    
+}    
+sass 
+.phone {
+	background: url('../img/phone.svg') left no-repeat;
+    background-size: 40px;
+}
+
+.email {
+	background: url('../img/email.svg') left no-repeat;
+    background-size: 45px;
+}
+	
+footer {
+	margin-top: 0;
+	height: 8em;
+	color: #000;
+	line-height: 1.9em;
+	bottom: 0;
+	padding: 10px;
+}
+
+#social_icons ul li {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+
+/*	Media Queries
+**************************************/
+
+@media screen and (min-width: 768px) {
+    .left { float: left; }
+
+    .right { float: right; }
+    
+    header { height: 100%; }
+    
+    .logo { width: initial; }
+    
+    .main-nav { 
+        margin: 0 auto 0 auto; 
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+    
+    nav { margin: 0; }
+
+    nav ul li { 
+        margin-right: 1.5em;
+        margin-bottom: 5px;
+        display: inline-block; 
+        width: 8em;
+        margin-bottom: 5px;
+    }
+
+    #portfolio > div {
+        margin-bottom: 5em;
+        padding-right: initial;
+        padding-left: initial;
+    }    
+    
+    #portfolio h1.heading {
+        margin-bottom: 2em;
+    }
+    
+    .content { 
+        padding-top: 5em; 
+        padding-bottom: 5em;
+        padding-right: initial;
+        padding-left: initial;
+    }
+
+    a.btn {
+        -webkit-transition: background 0.3s ease-in-out; 
+    	        transition: background 0.3s ease-in-out;
+    }
+    
+    .container { 
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    .full-screen,
+    .content-a {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .not-fullscreen,
+    .not-fullscreen .content-a,
+    .fullscreen.not-overflow,
+    .fullscreen.not-overflow .content-a {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .content-a { display: table; }
+
+    .content-b {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .background {
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+    }
+
+
+    #portfolio figure { width: 35%; }
+
+    .portfolio-item-description { width: 60%; }
+
+    .phone,
+    .email {
+        font-size: 3rem;
+        margin-left: 1.5em;
+        padding: 40px 0 30px 150px;    
+    }    
+
+    ul { -webkit-padding-start: 40px; }
+    
+    .title h3 { font-size: 4.6em; }
+
+    #social_icons img {
+        opacity: 0.6;
+	    -webkit-transition: opacity 0.3s ease-in-out;
+                transition: opacity 0.3s ease-in-out;
+    }
+
+    #social_icons img:hover {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /*.main-nav { float: right; } */
+
+    .portfolio-image-item { 
+        width: initial; 
+        max-width: initial; 
+    }
+    
+    .container {
+        width: 70%;
+    }
+    
+    #portfolio > div {
+        margin-bottom: 8em;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:url(../img/ui.totop.png) no-repeat left -50px;
+}
+
+#toTopHover {
+	background:url(../img/ui.totop.png) no-repeat left top;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	     opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

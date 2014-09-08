@@ -1,9 +1,7 @@
-html { font-family: 'Droid Sans', sans-serif; }
-
 html,
 body { height: 100%; }
 
-.heading { font-family: 'Droid Serif', serif; }
+.heading { font-size: 6rem; }
 
 ul { -webkit-padding-start: 0; }
 
@@ -12,35 +10,12 @@ ul { -webkit-padding-start: 0; }
     padding-bottom: 1em;
 }  
 
-/* Clearfix */
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-} 
-.group:after {
-    clear: both;
-}
-
 .center-text { text-align: center; }
-
-footer {
-	background: linear-gradient(#A1A1D8, #558);
-    min-height: 6.3em;
-}
-
-#about img {
-    border: 1px solid #a2a2a2;
-    max-width: 225px;
-    width: 100%;
-    padding: 3px;
-    display: block;    
-    
-}
 
 img.center {
     display: block;
     margin: 0 auto;
+    padding-top: 5px;
 }
 
 .title { 
@@ -51,6 +26,17 @@ img.center {
 
 .logo { 
     width: 100px; 
+}
+
+#about,
+#resume { background-color: #315491; }
+
+#about img {
+    border: 1px solid #a2a2a2;
+    max-width: 225px;
+    width: 100%;
+    padding: 3px;
+    display: block;    
 }
 
 #portfolio { 
@@ -135,8 +121,10 @@ ol {
     margin-top: 13px;
 }
 
-#resume {
-	background-color: #e7f3fd;
+main {
+    color: #fff;
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 2rem;
 }
 
 #resume h1 + p {
@@ -152,7 +140,7 @@ h3 p {
 #resume ul { margin-left: 25px; }
 
 #contact {
-	background-color: #c0d8f6;
+	background-color: #0F2744;
 	min-height: 10em;
     ul { list-style: none; }
 }
@@ -162,7 +150,7 @@ h3 p {
     font-size: 2rem;
     padding: 40px 0 30px 55px;    
 }    
-sass 
+
 .phone {
 	background: url('../img/phone.svg') left no-repeat;
     background-size: 40px;
@@ -174,12 +162,9 @@ sass
 }
 	
 footer {
-	margin-top: 0;
-	height: 8em;
-	color: #000;
-	line-height: 1.9em;
-	bottom: 0;
 	padding: 10px;
+    background: linear-gradient(#A1A1D8, #558);
+    min-height: 10rem;
 }
 
 #social_icons ul li {
@@ -271,7 +256,6 @@ footer {
     .background {
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-attachment: fixed;
     }
 
 
@@ -301,8 +285,8 @@ footer {
     }
 }
 
-@media screen and (min-width: 1000px) {
-    /*.main-nav { float: right; } */
+@media screen and (min-width: 1025px) {
+    .background { background-attachment: fixed; }   
 
     .portfolio-image-item { 
         width: initial; 

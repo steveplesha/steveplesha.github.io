@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -22,7 +22,7 @@
                     <h3>< Web Developer /></h3>
                 </div>
             </div> 
-            <nav class="main-nav group">
+            <nav class="main-nav clearfix">
                 <ul>
                     <li><a class="btn" href="#about">About</a></li>
                     <li><a class="btn" href="#portfolio">Portfolio</a></li>
@@ -38,7 +38,7 @@
                 <div class= "row">
                     <div class="left col-xs-12 col-sm-8 col-md-8 col-lg-8">
                         <h1 class="heading" >All about me</h1>
-                        <p>I graduated from the University of Southern Indiana with a Bachelors in Computer Information Systems. I got my first tech job in Chicago at age 16 and have pretty much been doing it ever since. I've worked at a help desk at an international company all the way down to being one of a staff of two at a small engineering firm. Recently, I've been trying my hand at web development, going through all Codecademy, Codeschool, Treehouse, and Udemy have to offer and soaking up as many resources as I can.</p>
+                        <p>I graduated from the University of Southern Indiana with a Bachelors in Computer Information Systems. My HTML experience centered on table layouts and inline styling.  Since that time, I"ve worked in various tech support roles and have recently decided to get back into my main interest - coding!  I've been going through all Codecademy, Codeschool, Treehouse, and Udemy have to offer and soaking up as many resources as I can whenever I can - usually nights and weekends.  My emphasis has been in HTML5, CSS3, and JavaScript along with some Rails and Wordpress thrown in for good measure.</p>
                     </div>
                     <img class="center right cold-xs-12  col-sm-4 col-md-4 col-lg-4" src="img/steve.png" alt="Steve Plesha" />
                 </div>
@@ -46,7 +46,7 @@
 		</section>  <!-- End of about section --> 
         <section id="portfolio">
             <h1 class="heading center-text">Portfolio</h1>
-            <div class="corporatix group">
+            <div class="corporatix clearfix">
                 <div class="container portfolio-item">
                     <figure class="left">
                         <a href="img/corporatix.jpg" data-lightbox="corporatix">
@@ -55,13 +55,13 @@
                         <figcaption>( Click to enlarge )</figcaption>
                     </figure>   
                     <div class="portfolio-item-description right">
-                        <h1 class="heading" >Corporatix PSD to HTML conversion</h1>
+                        <h1>Corporatix PSD to HTML conversion</h1>
                         <p>This a PSD to HTML conversion of the free Corporatix PSD template available at <a href="http://www.graphicsfuel.com/2010/09/corporate-business-website-psd-template" alt="Corporatix PSD Download source" >Graphics Fuel</a></p>
                         <p>View the resulting page <a href="http://steveplesha.com/corporatix" >here.</a></p>
                     </div>
                 </div>
             </div>  <!-- End of corporatix div --> 
-            <div class="sixrevisions group">
+            <div class="sixrevisions clearfix">
                 <div class="container portfolio-item ">
                     <figure class="right">
                         <a href="img/sixrevisions.jpg" data-lightbox="sixrevisions">
@@ -70,13 +70,13 @@
                         <figcaption>( Click to enlarge )</figcaption>
                     </figure>                     
                     <div class="portfolio-item-description left">
-                        <h1 class="heading" >6Revisions PSD to HTML conversion</h1>
+                        <h1>6Revisions PSD to HTML conversion</h1>
                         <p>This a PSD to HTML conversion of the free 6Revisions PSD template available at <a href="http://www.graphicsfuel.com/2010/09/corporate-business-website-psd-template" alt="Corporatix PSD Download source" >Graphics Fuel</a></p>
                         <p>View the resulting page <a href="http://steveplesha.com/6revisions" >here.</a></p>
                     </div>
                 </div>
             </div>  <!-- End of 6Revisions div --> 
-            <div class="minim group">
+            <div class="minim clearfix">
                 <div class="container portfolio-item ">
                     <figure class="left">
                         <a href="img/minim.jpg" data-lightbox="minim">
@@ -85,13 +85,13 @@
                         <figcaption>( Click to enlarge )</figcaption>
                     </figure> 
                     <div class="portfolio-item-description right">
-                        <h1 class="heading" >PSD to HTML conversion</h1>
+                        <h1>PSD to HTML conversion</h1>
                         <p>This a PSD to HTML conversion of the free 6Revisions PSD template available at <a href="http://www.themeopenstock.com/328-New,-Fresh-and-Free-PSD-Web-Layout-theme" alt="Free PSD Download source" >Theme Open Stock</a></p>
                         <p>View the resulting page <a href="http://steveplesha.com/minim" >here.</a></p>
                     </div>                    
                 </div>
             </div>  <!-- End of minim div --> 
-            <div class="group">
+            <div>
                 <div class="container portfolio-item ">
                     <figure class="right">
                         <a href="img/lockdown.png" data-lightbox="lockdown">
@@ -100,7 +100,7 @@
                         <figcaption>( Click to enlarge )</figcaption>
                     </figure>                     
                     <div class="portfolio-item-description left">
-                        <h1 class="heading" >School Emergency Form</h1>
+                        <h1>School Emergency Form</h1>
                         <p>This is a project built for the school I work at as a support tech. The security officer found another district that used a Google form for teachers to let school administration know if there was an emergency in their room.  The idea was to make the reporting functionality available if the teacher was not able to get to speak on the phone.  The data gets sent to a Google spreadsheet and an email is sent to select staff when a response is submitted.  The problem was that the form wasn't too functional on mobile devices.  So I took the form and made it mobile-ready while still sending the data back to the Google Doc and shooting off the email.  I also had the form match the color scheme on the <a href="http://www.hanover.k12.in.us">corporation website.</a></p>
                         <p>View the resulting page <a href="http://steveplesha.com/lockdownreport-portfolio/" >here.</a> (This is a fork that doesn't send data to school employees)</p>
                     </div>
@@ -111,10 +111,10 @@
             <div class="container">
                 <h1 class="heading" >Steve Plesha</h1>
                 <p>3334 Maple Drive - Highland, Indiana 46322 - (219) 669-6880 - steveplesha@gmail.com</p>
-                <h3 class="heading" >Skills</h3>
+                <h2>Skills</h2>
                 <p>Experience with supporting Windows XP/7/8, Windows Server 2003/2008, Exchange 2003/2007, Active Directory, DHCP, DNS, Group Policy, 
                     Backup Exec, network printers, PC imaging and deployment (FOG and Clonezilla), VBScript, Microsoft Office suite</p>
-                <h3 class="heading" >Professional Experience</h3>
+                <h2>Professional Experience</h2>
                 <span class="jobtitle"><b>Systems Support Technician, </b> October 2008 - Present</span>
                 <p><em>Hanover Community School Corporation,</em> Cedar Lake, IN</p>
                 <ul>

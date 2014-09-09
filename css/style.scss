@@ -5,11 +5,6 @@ body { height: 100%; }
 
 ul { -webkit-padding-start: 0; }
 
-.content { 
-    padding-top: 1em;
-    padding-bottom: 1em;
-}  
-
 .center-text { text-align: center; }
 
 img.center {
@@ -53,20 +48,14 @@ img.center {
 }
 
 .portfolio-item {
-    padding-bottom: 20px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 13px 12px -12px #aa9797;
     background-color: rgba(0, 0, 255, 0.5);
-    padding: 15px;
-    color: #fff;
+    padding: 40px 5px 40px 5px;
     text-align: center;
 }
 
 #portfolio a { color: #BDE0FF; }
-
-.content { 
-    padding: 1.25em;
-}
 
 #portfolio figure {
     color: #fff;
@@ -201,22 +190,20 @@ footer {
         width: 8em;
         margin-bottom: 5px;
     }
+    
+    #about,
+    #resume,
+    #contact {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
 
     #portfolio > div {
-        margin-bottom: 5em;
-        padding-right: initial;
-        padding-left: initial;
+        margin-bottom: 5rem;
     }    
     
     #portfolio h1.heading {
         margin-bottom: 2em;
-    }
-    
-    .content { 
-        padding-top: 5em; 
-        padding-bottom: 5em;
-        padding-right: initial;
-        padding-left: initial;
     }
 
     a.btn {
@@ -298,7 +285,7 @@ footer {
     }
     
     #portfolio > div {
-        margin-bottom: 8em;
+        margin-bottom: 8rem;
     }
 }
 

@@ -8,10 +8,6 @@ body {
 ul {
   -webkit-padding-start: 0; }
 
-.content {
-  padding-top: 1em;
-  padding-bottom: 1em; }
-
 .center-text {
   text-align: center; }
 
@@ -51,19 +47,14 @@ img.center {
   padding-left: 1em; }
 
 .portfolio-item {
-  padding-bottom: 20px;
   border-bottom: 1px solid #fff;
   box-shadow: 0 13px 12px -12px #aa9797;
   background-color: rgba(0, 0, 255, 0.5);
-  padding: 15px;
-  color: #fff;
+  padding: 40px 5px 40px 5px;
   text-align: center; }
 
 #portfolio a {
   color: #BDE0FF; }
-
-.content {
-  padding: 1.25em; }
 
 #portfolio figure {
   color: #fff;
@@ -150,7 +141,7 @@ h3 p {
 
 footer {
   padding: 10px;
-  background: linear-gradient(#A1A1D8, #558);
+  background: linear-gradient(#a1a1d8, #555588);
   min-height: 10rem; }
 
 #social_icons ul li {
@@ -188,19 +179,17 @@ footer {
     width: 8em;
     margin-bottom: 5px; }
 
+  #about,
+  #resume,
+  #contact {
+    padding-top: 8rem;
+    padding-bottom: 8rem; }
+
   #portfolio > div {
-    margin-bottom: 5em;
-    padding-right: initial;
-    padding-left: initial; }
+    margin-bottom: 5rem; }
 
   #portfolio h1.heading {
     margin-bottom: 2em; }
-
-  .content {
-    padding-top: 5em;
-    padding-bottom: 5em;
-    padding-right: initial;
-    padding-left: initial; }
 
   a.btn {
     -webkit-transition: background 0.3s ease-in-out;
@@ -272,7 +261,7 @@ footer {
     width: 70%; }
 
   #portfolio > div {
-    margin-bottom: 8em; } }
+    margin-bottom: 8rem; } }
 /*
 |--------------------------------------------------------------------------
 | UItoTop jQuery Plugin 1.2
@@ -305,5 +294,3 @@ footer {
 
 #toTop:active, #toTop:focus {
   outline: none; }
-
-/*# sourceMappingURL=style.css.map */

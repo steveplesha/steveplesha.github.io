@@ -19,9 +19,7 @@ img.center {
     color: #fff;
 }
 
-.logo { 
-    width: 100px; 
-}
+.logo { width: 100px; }
 
 #about,
 #resume { background-color: #315491; }
@@ -35,24 +33,18 @@ img.center {
 }
 
 #portfolio { 
-    background: url("../img/portfoliobkg.jpg");
+    background: url("../img/portfoliobkg.png");
     background-attachment: fixed;
-    padding-top: 3.6em;
-    padding-bottom: 3.6em;
-}
-
-#portfolio > div {
-    margin-bottom: 2em;
-    padding-right: 1em;
-    padding-left: 1em;
+    background-size: cover;
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
 }
 
 .portfolio-item {
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 13px 12px -12px #aa9797;
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(23, 23, 68, 0.9);
     padding: 40px 5px 40px 5px;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 #portfolio a { color: #BDE0FF; }
@@ -188,7 +180,6 @@ footer {
         margin-bottom: 5px;
         display: inline-block; 
         width: 8em;
-        margin-bottom: 5px;
     }
     
     #about,
@@ -198,13 +189,9 @@ footer {
         padding-bottom: 8rem;
     }
 
-    #portfolio > div {
+   .portfolio-item {
         margin-bottom: 5rem;
     }    
-    
-    #portfolio h1.heading {
-        margin-bottom: 2em;
-    }
 
     a.btn {
         -webkit-transition: background 0.3s ease-in-out; 
@@ -280,12 +267,12 @@ footer {
         max-width: initial; 
     }
     
-    .container {
-        width: 70%;
+    .portfolio-item {
+        margin-bottom: 8rem;
     }
     
-    #portfolio > div {
-        margin-bottom: 8rem;
+    .container {
+        width: 70%;
     }
 }
 

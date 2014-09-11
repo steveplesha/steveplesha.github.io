@@ -36,14 +36,11 @@ img.center {
     background: url("../img/portfoliobkg.png");
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 3.6rem;
-    padding-bottom: 3.6rem;
 }
 
 .portfolio-item {
     background-color: rgba(23, 23, 68, 0.9);
-    padding: 40px 5px 40px 5px;
-    text-align: center;
+    padding: 40px 20px 40px 20px;
     margin-bottom: 2rem;
 }
 
@@ -183,6 +180,7 @@ footer {
     }
     
     #about,
+    #portfolio,
     #resume,
     #contact {
         padding-top: 8rem;

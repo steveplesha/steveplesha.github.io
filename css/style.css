@@ -19,7 +19,7 @@ img.center {
 .title {
   width: 100%;
   text-align: center;
-  color: #fff; }
+  color: white; }
 
 .logo {
   width: 100px; }
@@ -49,12 +49,12 @@ img.center {
   color: #BDE0FF; }
 
 #portfolio figure {
-  color: #fff;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 5px; }
 
 .portfolio-item-image {
-  box-shadow: 4px 4px 10px #000;
+  box-shadow: 4px 4px 10px black;
   max-width: 100%;
   margin-bottom: 3px;
   margin-left: auto;
@@ -83,27 +83,32 @@ a.btn {
   border: 1px solid #fff;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: white;
   padding: 0.5em 1em;
   display: block;
   margin-bottom: 5px;
   border-radius: 0; }
   a.btn:hover {
-    color: #000;
-    background: #fff; }
+    color: black;
+    background: white; }
 
 ul,
 ol {
   margin-top: 13px; }
 
 main {
-  color: #fff;
+  color: white;
   font-family: 'PT Sans', sans-serif;
   font-size: 2rem; }
 
 #resume h1 + p {
   border-bottom: 1px solid #fff;
   padding-bottom: 3px; }
+
+#resume a {
+  color: white; }
+  #resume a:hover {
+    color: white; }
 
 #resume h3.jobtitle,
 h3 p {
@@ -215,9 +220,6 @@ footer {
 
   #portfolio figure {
     width: 35%; }
-
-  .portfolio-item-description {
-    width: 60%; }
 
   .phone,
   .email {

@@ -3,7 +3,16 @@ body { height: 100%; }
 
 .heading { font-size: 6rem; }
 
-ul { -webkit-padding-start: 0; }
+ul { /* Removing padding added by Chrome */
+    -webkit-padding-start: 0; 
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}  
+
+ul,
+ol {
+    margin-top: 13px;
+}
 
 .center-text { text-align: center; }
 
@@ -13,19 +22,24 @@ img.center {
     padding-top: 5px;
 }
 
-.title { 
+.title {
     width: 100%;
     text-align: center;
-    color: rgb( 255, 255, 255 );
-}
+    color: rgb( 255, 255, 255 );    
+    h1 { 
+        font-size: 5.6em; 
+        margin-top: 0;
+    }
+    h3 { font-size: 3.6rem; }
+} 
 
 .logo { width: 100px; }
 
 #about,
-#resume { background-color: #315491; }
+#resume { background-color: rgb( 49, 84, 145 ); }
 
 #about img {
-    border: 1px solid #a2a2a2;
+    border: 1px solid rgb( 162, 162, 162 );
     max-width: 225px;
     width: 100%;
     padding: 3px;
@@ -36,20 +50,18 @@ img.center {
     background: url("../img/portfoliobkg.png");
     background-attachment: fixed;
     background-size: cover;
+    figure {
+        text-align: center;
+        font-weight: bold;
+        margin: 5px;
+    }
 }
 
 .portfolio-item {
     background-color: rgba(23, 23, 68, 0.9);
     padding: 40px 20px 40px 20px;
     margin-bottom: 2rem;
-}
-
-#portfolio a { color: #BDE0FF; }
-
-#portfolio figure {
-    text-align: center;
-    font-weight: bold;
-    margin: 5px;
+    a { color: rgb( 189, 224, 255 ); }
 }
 
 .portfolio-item-image {
@@ -60,27 +72,16 @@ img.center {
     margin-right: auto;
 }
 
-.title {
-    h1 { font-size: 5.6em; }
-    h3 { font-size: 3.6rem; }
-} 
-
 .main-nav { 
     text-align: center; 
     margin-left: 5px;
     margin-right: 5px;
 }
 
-ul { /* Removing padding added by Chrome */
-    -webkit-padding-start: 0; 
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-}  
-
 nav ul li { display: block; }
 
 a.btn { 
-    border: 1px solid #fff;
+    border: 1px solid rgb( 255, 255, 255 );
     text-transform: uppercase;
     font-weight: bold;
     color: rgb( 255, 255, 255 );
@@ -92,11 +93,6 @@ a.btn {
         color: rgb( 0, 0, 0 );
         background: rgb( 255, 255, 255 );
     }
-}
-
-ul,
-ol {
-    margin-top: 13px;
 }
 
 main {
@@ -123,7 +119,7 @@ h3 p {
 #resume ul { margin-left: 25px; }
 
 #contact {
-	background-color: #0F2744;
+	background-color: rgb( 15, 39, 68 );
 	min-height: 10em;
     ul { list-style: none; }
 }
@@ -146,7 +142,7 @@ h3 p {
 	
 footer {
 	padding: 10px;
-    background: linear-gradient(#A1A1D8, #558);
+    background: linear-gradient(rgb( 161, 161, 216 ), rgb( 85, 85, 136 ));
     min-height: 10rem;
 }
 
@@ -182,6 +178,11 @@ footer {
         margin-bottom: 5px;
         display: inline-block; 
         width: 8em;
+    }
+    
+    .title {
+        h1 { margin-top: 20px; }
+        h3 { font-size: 4.6em; }
     }
     
     #about,
@@ -247,16 +248,11 @@ footer {
 
     ul { -webkit-padding-start: 40px; }
     
-    .title h3 { font-size: 4.6em; }
-
     #social_icons img {
         opacity: 0.6;
 	    -webkit-transition: opacity 0.3s ease-in-out;
                 transition: opacity 0.3s ease-in-out;
-    }
-
-    #social_icons img:hover {
-        opacity: 1;
+        &:hover { opacity: 1; }
     }
 }
 

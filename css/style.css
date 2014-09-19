@@ -6,7 +6,14 @@ body {
   font-size: 6rem; }
 
 ul {
-  -webkit-padding-start: 0; }
+  /* Removing padding added by Chrome */
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+ul,
+ol {
+  margin-top: 13px; }
 
 .center-text {
   text-align: center; }
@@ -20,6 +27,11 @@ img.center {
   width: 100%;
   text-align: center;
   color: white; }
+  .title h1 {
+    font-size: 5.6em;
+    margin-top: 0; }
+  .title h3 {
+    font-size: 3.6rem; }
 
 .logo {
   width: 100px; }
@@ -39,19 +51,17 @@ img.center {
   background: url("../img/portfoliobkg.png");
   background-attachment: fixed;
   background-size: cover; }
+  #portfolio figure {
+    text-align: center;
+    font-weight: bold;
+    margin: 5px; }
 
 .portfolio-item {
   background-color: rgba(23, 23, 68, 0.9);
   padding: 40px 20px 40px 20px;
   margin-bottom: 2rem; }
-
-#portfolio a {
-  color: #BDE0FF; }
-
-#portfolio figure {
-  text-align: center;
-  font-weight: bold;
-  margin: 5px; }
+  .portfolio-item a {
+    color: #bde0ff; }
 
 .portfolio-item-image {
   box-shadow: 4px 4px 10px black;
@@ -60,27 +70,16 @@ img.center {
   margin-left: auto;
   margin-right: auto; }
 
-.title h1 {
-  font-size: 5.6em; }
-.title h3 {
-  font-size: 3.6rem; }
-
 .main-nav {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px; }
 
-ul {
-  /* Removing padding added by Chrome */
-  -webkit-padding-start: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
-
 nav ul li {
   display: block; }
 
 a.btn {
-  border: 1px solid #fff;
+  border: 1px solid white;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -91,10 +90,6 @@ a.btn {
   a.btn:hover {
     color: black;
     background: white; }
-
-ul,
-ol {
-  margin-top: 13px; }
 
 main {
   color: white;
@@ -118,7 +113,7 @@ h3 p {
   margin-left: 25px; }
 
 #contact {
-  background-color: #0F2744;
+  background-color: #0f2744;
   min-height: 10em; }
   #contact ul {
     list-style: none; }
@@ -175,6 +170,11 @@ footer {
     display: inline-block;
     width: 8em; }
 
+  .title h1 {
+    margin-top: 20px; }
+  .title h3 {
+    font-size: 4.6em; }
+
   #about,
   #portfolio,
   #resume,
@@ -230,16 +230,12 @@ footer {
   ul {
     -webkit-padding-start: 40px; }
 
-  .title h3 {
-    font-size: 4.6em; }
-
   #social_icons img {
     opacity: 0.6;
     -webkit-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out; }
-
-  #social_icons img:hover {
-    opacity: 1; } }
+    #social_icons img:hover {
+      opacity: 1; } }
 @media screen and (min-width: 1025px) {
   .background {
     background-attachment: fixed; }

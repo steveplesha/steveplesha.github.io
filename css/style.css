@@ -96,19 +96,25 @@ main {
   font-family: 'PT Sans', sans-serif;
   font-size: 2rem; }
 
+#skills {
+  background-color: #A528CC; }
+
 .skill-item {
-  background-color: #f01e98; }
+  background-color: #26B80A; }
 
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
-  perspective: 1000; }
+  perspective: 1000;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d; }
 
 .flip-container:hover .flipper,
 .flip-container.hover .flipper {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
 .flip-container,
@@ -154,7 +160,7 @@ main {
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
-  tranform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-color: #000; }
 
 #resume h1 + p {
@@ -238,6 +244,7 @@ footer {
 
   #about,
   #portfolio,
+  #skills,
   #resume,
   #contact {
     padding-top: 8rem;

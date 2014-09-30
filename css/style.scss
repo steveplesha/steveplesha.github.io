@@ -102,11 +102,11 @@ main {
 }
 
 #skills {
-    background-color: #A528CC;
+    background-color: rgb( 49, 127, 221 );
 }
 
 .skill-item {
-    background-color: #26B80A;
+    background-color: rgb( 221, 160, 49 );
 }
 
 .flip-container { 
@@ -120,10 +120,10 @@ main {
 
 .flip-container:hover .flipper, 
 .flip-container.hover .flipper {
-    -webkit-transform: rotateY(180deg);
-       -moz-transform: rotateY(180deg);
-         -o-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateX(180deg);
+       -moz-transform: rotateX(180deg);
+         -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
 }
 
 .flip-container, 
@@ -131,6 +131,7 @@ main {
 .back {
     width: 320px;
     height: 150px;
+    margin-right: 20px;
 }
 
 .flipper {
@@ -138,7 +139,10 @@ main {
     transform-style: preserve-3d;
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     position: relative;
+    transform-origin: 100% 75px;
+    text-align: center;
 }
 
 .front,
@@ -170,17 +174,21 @@ main {
 
 .front {
     z-index: 2;
-            transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
 }
 
 .back { 
-    -webkit-transform: rotateY(-180deg);
-       -moz-transform: rotateY(-180deg);
-         -o-transform: rotateY(-180deg);
-        -ms-transform: rotateY(-180deg);    
-            transform: rotateY(180deg); 
-    background-color: #000;
+    -webkit-transform: rotateX(180deg);
+       -moz-transform: rotateX(180deg);
+         -o-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);    
+            transform: rotateX(180deg); 
+    background-color: rgb( 144, 94, 3 );
+}
+
+.skill-text {
+    margin: auto;
 }
 
 #resume h1 + p {

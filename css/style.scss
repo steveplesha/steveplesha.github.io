@@ -106,7 +106,7 @@ main {
 }
 
 .skill-item {
-    background-color: rgb( 221, 160, 49 );
+    
 }
 
 .flip-container { 
@@ -116,6 +116,7 @@ main {
             perspective: 1000; 
          -moz-transform: perspective(1000px);
    -moz-transform-style: preserve-3d;
+    width: 100%;
 }
 
 .flip-container:hover .flipper, 
@@ -129,9 +130,8 @@ main {
 .flip-container, 
 .front, 
 .back {
-    width: 320px;
+    margin-bottom: 20px;
     height: 150px;
-    margin-right: 20px;
 }
 
 .flipper {
@@ -168,6 +168,7 @@ main {
     transform-style: preserve-3d;
     
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
 }
@@ -176,6 +177,7 @@ main {
     z-index: 2;
             transform: rotateX(0deg);
     -webkit-transform: rotateX(0deg);
+    background-color: rgb( 221, 160, 49 );
 }
 
 .back { 
@@ -329,6 +331,13 @@ footer {
 
 
     #portfolio figure { width: 35%; }
+    
+    .flip-container { 
+        width: 48%; 
+        margin-right: 20px;
+        &:nth-child(even) { margin-right: 0; }
+    }
+    
 
     .phone,
     .email {

@@ -3,7 +3,7 @@ body { height: 100%; }
 
 .heading { font-size: 6rem; }
 
-ul { /* Removing padding added by Chrome */
+ul { /* Remove padding added by Chrome */
     -webkit-padding-start: 0; 
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
@@ -136,10 +136,10 @@ main {
 
 .flipper {
     transition: 0.6s;
-    transform-style: preserve-3d;
     -moz-transform: perspective(1000px);
-    -moz-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;    
     position: relative;
     transform-origin: 100% 75px;
     text-align: center;

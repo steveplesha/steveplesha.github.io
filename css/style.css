@@ -129,6 +129,7 @@ main {
   transform-style: preserve-3d;
   position: relative;
   transform-origin: 100% 75px;
+  -webkit-transform-origin: 100% 75px;
   text-align: center; }
 
 .front,

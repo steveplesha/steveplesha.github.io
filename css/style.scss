@@ -188,6 +188,7 @@ main {
         -ms-transform: rotateX(180deg);    
             transform: rotateX(180deg); 
     background-color: rgb( 144, 94, 3 );
+    padding: 5px;
 }
 
 .skill-text {
@@ -235,7 +236,7 @@ h3 p {
 	
 footer {
 	padding: 10px;
-    background: linear-gradient(rgb( 161, 161, 216 ), rgb( 85, 85, 136 ));
+    background-color: rgb( 85, 85, 136 );
     min-height: 10rem;
 }
 
@@ -243,6 +244,8 @@ footer {
 	display: inline-block;
 	padding-right: 1em;
 }
+
+
 
 
 /*	Media Queries

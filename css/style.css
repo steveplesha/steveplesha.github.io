@@ -165,7 +165,8 @@ main {
   -o-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  background-color: #905e03; }
+  background-color: #905e03;
+  padding: 5px; }
 
 .skill-text {
   margin: auto; }
@@ -207,7 +208,7 @@ h3 p {
 
 footer {
   padding: 10px;
-  background: linear-gradient(#a1a1d8, #555588);
+  background-color: #555588;
   min-height: 10rem; }
 
 #social_icons ul li {
@@ -370,3 +371,5 @@ footer {
 
 #toTop:active, #toTop:focus {
   outline: none; }
+
+/*# sourceMappingURL=style.css.map */

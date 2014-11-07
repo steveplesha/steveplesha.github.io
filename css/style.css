@@ -9,7 +9,10 @@ ul {
   /* Remove padding added by Chrome */
   -webkit-padding-start: 0;
   -webkit-margin-before: 0;
-  -webkit-margin-after: 0; }
+  -webkit-margin-after: 0;
+  -moz-padding-start: 0;
+  -moz-margin-before: 0;
+  -moz-margin-after: 0; }
 
 ul,
 ol {
@@ -97,7 +100,8 @@ main {
   font-size: 2rem; }
 
 #skills {
-  background-color: #317fdd; }
+  background-image: url("../img/skillsbkg.png");
+  background-size: cover; }
 
 .flip-container {
   -webkit-perspective: 1000;
@@ -106,8 +110,19 @@ main {
   perspective: 1000;
   -moz-transform: perspective(1000px);
   -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   width: 100%; }
 
+.alternate-heading-color {
+  color: rgba(0, 0, 0, 0.7); }
+
+/*
+// IE-specific Styling
+.flip-container:hover .back { transform: rotateX(0deg); }
+
+.flip-container:hover .front { transform: rotateX(180deg); }
+// End of IE-specific Styling
+*/
 .flip-container:hover .flipper,
 .flip-container.hover .flipper {
   -webkit-transform: rotateX(180deg);
@@ -123,50 +138,52 @@ main {
 
 .flipper {
   transition: 0.6s;
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  text-align: center;
   position: relative;
-  transform-origin: 100% 75px;
+  -moz-transform: perspective(1000px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform-origin: 100% 75px;
-  text-align: center; }
+  transform-origin: 100% 75px; }
 
 .front,
 .back {
+  background-color: rgba(49, 84, 145, 0.7);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
-  -moz-transition: 0.6s;
   -moz-transform-style: preserve-3d;
-  -o-transition: 0.6s;
-  -o-transform-style: preserve-3d;
-  -ms-transition: 0.6s;
   -ms-transform-style: preserve-3d;
-  transition: 0.6s;
+  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0; }
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
 
 .front {
   z-index: 2;
-  transform: rotateX(0deg);
   -webkit-transform: rotateX(0deg);
-  background-color: #dda031; }
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg); }
 
 .back {
+  padding: 5px;
   -webkit-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  background-color: #905e03;
-  padding: 5px; }
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg); }
 
 .skill-text {
   margin: auto; }
@@ -193,18 +210,13 @@ h3 p {
   #contact ul {
     list-style: none; }
 
-.phone,
-.email {
-  font-size: 2rem;
-  padding: 40px 0 30px 55px; }
+.contact-info {
+  font-size: 1.3em;
+  margin-bottom: 1em; }
 
-.phone {
-  background: url("../img/phone.svg") left no-repeat;
-  background-size: 40px; }
-
-.email {
-  background: url("../img/email.svg") left no-repeat;
-  background-size: 45px; }
+.contact-icon {
+  height: 2em;
+  margin-right: 0.5em; }
 
 footer {
   padding: 10px;
@@ -311,11 +323,9 @@ footer {
     .flip-container:nth-child(even) {
       margin-right: 0; }
 
-  .phone,
-  .email {
-    font-size: 3rem;
-    margin-left: 1.5em;
-    padding: 40px 0 30px 150px; }
+  .contact-info {
+    margin-right: 2em;
+    margin-bottom: 0; }
 
   ul {
     -webkit-padding-start: 40px; }

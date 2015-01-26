@@ -25,6 +25,12 @@ img.center {
     padding-top: 5px;
 }
 
+.shadow-box { 
+    background-color: rgba(55, 58, 107, 0.7);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .title {
     width: 100%;
     text-align: center;
@@ -362,7 +368,6 @@ footer {
 
     .contact-info {
         margin-right: 2em;
-        margin-bottom: 0;
     }
 
     ul { -webkit-padding-start: 40px; }

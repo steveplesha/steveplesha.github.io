@@ -26,6 +26,11 @@ img.center {
   margin: 0 auto;
   padding-top: 5px; }
 
+.shadow-box {
+  background-color: rgba(55, 58, 107, 0.7);
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
 .title {
   width: 100%;
   text-align: center;
@@ -324,8 +329,7 @@ footer {
       margin-right: 0; }
 
   .contact-info {
-    margin-right: 2em;
-    margin-bottom: 0; }
+    margin-right: 2em; }
 
   ul {
     -webkit-padding-start: 40px; }

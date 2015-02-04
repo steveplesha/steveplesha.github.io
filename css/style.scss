@@ -128,14 +128,6 @@ main {
 
 .alternate-heading-color { color: rgba( 0, 0, 0, 0.7 ); }
 
-/*
-// IE-specific Styling
-.flip-container:hover .back { transform: rotateX(0deg); }
-
-.flip-container:hover .front { transform: rotateX(180deg); }
-// End of IE-specific Styling
-*/
-
 .flip-container:hover .flipper, 
 .flip-container.hover .flipper {
     -webkit-transform: rotateX(180deg);

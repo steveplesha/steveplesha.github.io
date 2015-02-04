@@ -62,7 +62,7 @@ img.center {
   #portfolio figure {
     text-align: center;
     font-weight: bold;
-    margin: 5px; }
+    margin: 5px 15px 5px 5px; }
 
 .portfolio-item {
   background-color: rgba(23, 23, 68, 0.9);

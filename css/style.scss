@@ -26,7 +26,7 @@ img.center {
 }
 
 .shadow-box { 
-    background-color: rgba(55, 58, 107, 0.7);
+    background-color: rgba(55, 58, 107, 0.4);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -94,6 +94,7 @@ a.btn {
     text-transform: uppercase;
     font-weight: bold;
     color: rgb( 255, 255, 255 );
+    background-color: rgba(55, 58, 107, 0.4);
     padding: 0.5em 1em;	
     display: block;
     margin-bottom: 5px;

@@ -2,6 +2,10 @@ html,
 body {
   height: 100%; }
 
+body {
+  position: relative; }
+
+/* required for scrollspy */
 .heading {
   font-size: 6rem; }
 
@@ -86,19 +90,27 @@ img.center {
 nav ul li {
   display: block; }
 
+.nav > li {
+  display: inline-block; }
+
 a.btn {
   border: 1px solid white;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  background-color: rgba(55, 58, 107, 0.4);
+  background-color: rgba(55, 58, 107, 0.7);
   padding: 0.5em 1em;
   display: block;
   margin-bottom: 5px;
   border-radius: 0; }
-  a.btn:hover {
-    color: black;
+  a.btn:hover,
+  a.btn .active {
+    color: #373a6b;
     background: white; }
+
+.active a.btn {
+  color: #373a6b;
+  background: white; }
 
 main {
   color: white;
@@ -187,21 +199,25 @@ main {
 .skill-text {
   margin: auto; }
 
-#resume h1 + p {
+.bottom-border-white {
   border-bottom: 1px solid #fff;
   padding-bottom: 3px; }
 
+.pdf-icon {
+  height: 40px; }
+
 #resume a {
-  color: white; }
+  color: #bde0ff; }
   #resume a:hover {
-    color: white; }
+    color: #bde0ff; }
 
 #resume h3.jobtitle,
 h3 p {
   padding-left: 2em; }
 
 #resume ul {
-  margin-left: 25px; }
+  margin-left: 25px;
+  margin-bottom: 25px; }
 
 #contact {
   background-color: #0f2744;
@@ -242,13 +258,18 @@ footer {
     width: initial; }
 
   .main-nav {
+    width: 100%;
     margin: 0 auto 0 auto;
     position: absolute;
-    top: 15px;
-    right: 0; }
+    bottom: 50px; }
 
-  nav {
-    margin: 0; }
+  .main-nav.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(55, 58, 107, 0.8);
+    height: 66px;
+    z-index: 1; }
 
   nav ul li {
     margin-right: 1.5em;
@@ -273,7 +294,8 @@ footer {
     background: url("../img/steve.png") 0 0;
     height: 285px;
     width: 249px;
-    border: 4px solid white; }
+    border: 4px solid white;
+    border-radius: 10%; }
     .profile-pic:hover {
       background: url("../img/steve.png") -249px 0; }
 

@@ -21,7 +21,7 @@
 	<title>Steve Plesha | Web Developer</title>
 </head>
     
-<body>
+<body data-spy="scroll" data-target=".main-nav">
     <header>
         <div class="fullscreen background" style="background-image:url('img/header-bkg.jpg')" data-img-width="1600" data-img-height="1064">
             <div class="content-a">
@@ -34,7 +34,7 @@
                 </div>
             </div> 
             <nav class="main-nav clearfix">                
-                <ul>
+                <ul class="nav">
                     <li><a class="btn" href="#about">About</a></li>
                     <li><a class="btn" href="#portfolio">Portfolio</a></li>
                     <li><a class="btn" href="#skills">Skills</a></li>
@@ -299,26 +299,34 @@
         
         <section id="resume">
             <div class="container">
+                <span class="right"><a href="resume.pdf"><img src="img/pdf.png" alt="" class="pdf-icon"> Download Resume</a></span>
                 <h1 class="heading" >Steve Plesha</h1>
-                <p>3334 Maple Drive - Highland, Indiana 46322 - <a href="tel:+12196696880">(219) 669-6880</a> - <a href="mailto:steveplesha@gmail.com">steveplesha@gmail.com</a></p>
+                <p class="bottom-border-white">3334 Maple Drive - Highland, Indiana 46322 - <a href="tel:+12196696880">(219) 669-6880</a><br>
+                <a href="mailto:steveplesha@gmail.com">steveplesha@gmail.com</a> - Portfolio Website: <a href="http://steveplesha.com">steveplesha.com</a> - Github: <a href="http://github.com/steveplesha">github.com/steveplesha</a></p>
                 <h2>Skills</h2>
-                <p>Experience with HTML, CSS, JavaScript, Ruby on Rails, AngularJS, JQuery, Photoshop, Illustrator, and supporting Windows XP/7/8, Windows Server 2003/2008, Exchange 2003/2007, Active Directory, DHCP, DNS, Group Policy, Backup Exec, network printers, Microsoft Office suite, PC imaging and deployment (FOG and Clonezilla), VBScript</p>
+                <p class="bottom-border-white">Experience with HTML, CSS, Sass, JavaScript, jQuery, Bootstrap, Responsive Design, Git, Ruby on Rails, some AngularJS, WordPress, PHP, and mySQL.  Photoshop, Illustrator, VBScript, supporting Windows XP/7/8, Windows Server 2003/2008, Exchange 2003/2007, Active Directory, DHCP, DNS, Group Policy, Microsoft Office</p>
                 <h2>Professional Experience</h2>
+                <span class="jobtitle"><b>Web Developer</b>, March 2014 - Present</span>
+                <p><em>Freelance - Various Projects</em>, Highland, IN</p>
+                <ul>
+                    <li>Develop responsive sites using HTML, CSS, JavaScript, and Ruby on Rails</li>
+                    <li>Gather project details, design, and goals from clients</li>
+                    <li>Create graphic assets using Photoshop and Illustrator</li>
+                </ul>
                 <span class="jobtitle"><b>Systems Support Technician, </b> October 2008 - Present</span>
                 <p><em>Hanover Community School Corporation,</em> Cedar Lake, IN</p>
                 <ul>
-                    <li>Manage Corporation website using a custom, hosted CMS</li>
+                    <li>Manage Corporation website using a custom CMS</li>
+                    <li>Provide support to staff in webiste CMS use</li>
                     <li>Manage Windows Server 2003/2008 domain controllers</li>
+                    <li>Automate daily tasks with VBScript</li>
                     <li>Create and deactivate user in Active Directory</li>
                     <li>Manage group policy for the domain</li>
-                    <li>Automate daily tasks with VBScript</li>
-                    <li>Manage Exchange 2007 server</li>
+                    <li>Conduct employee training seminars for new software</li>                    
                     <li>Manage Symantec Backup Exec</li>
                     <li>Sophos Enterprise network protection solutions</li>
                     <li>Image and deploy PC systems</li>
                     <li>Manage networked printer deployment and maintenance</li>
-                    <li>Conduct employee training seminars for new software</li>
-                    <li>Maintain Astaro firewall</li>
                 </ul>
                 <span class="jobtitle"><b>IT Technician,</b> May 2006 - August 2006, May 2008 - October 2008</span>
                 <p><em>Peoples Bank,</em> Munster, IN</p>
@@ -327,7 +335,10 @@
                     <li>Repair, maintain, and troubleshoot laptop and desktop equipment</li>
                 </ul>
                 <span class="jobtitle"><b>Part-time PC Technician,</b> December 2007 - May 2008</span>
-                <p><em>Project Associates Inc.,</em> Evansville, IN</p>
+                <p class="bottom-border-white"><em>Project Associates Inc.,</em> Evansville, IN</p>
+                <h2>Education</h2>
+                <span class="jobtitle"><b>University of Southern Indiana</b>, Evansville, IN</span>
+                <p>Bachelor of Science, computer Information Systems</p>
             </div>
 		</section>  <!-- End of resume section -->
 		<div id="contact">
@@ -361,16 +372,7 @@
 	<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
 	<!-- Starting the plugin -->
 	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-	  			containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-	 		};
-			*/
-			
+		$(document).ready(function() {			
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>

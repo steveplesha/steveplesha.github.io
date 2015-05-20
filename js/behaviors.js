@@ -50,6 +50,18 @@ $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
 backgroundResize();
 
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var distanceFromTop;
+    distanceFromTop = $(document).scrollTop();
+    if (distanceFromTop >= ($('header').height() - 35)) {
+      $('.main-nav').addClass('fixed');
+    } else {
+      $('.main-nav').removeClass('fixed');
+    }
+  });
+});
+
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

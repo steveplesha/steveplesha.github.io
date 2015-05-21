@@ -90,9 +90,6 @@ img.center {
 nav ul li {
   display: block; }
 
-.nav > li {
-  display: inline-block; }
-
 a.btn {
   border: 1px solid white;
   text-transform: uppercase;
@@ -261,7 +258,7 @@ footer {
     width: 100%;
     margin: 0 auto 0 auto;
     position: absolute;
-    bottom: 50px; }
+    bottom: 2%; }
 
   .main-nav.fixed {
     position: fixed;
@@ -276,6 +273,9 @@ footer {
     margin-bottom: 5px;
     display: inline-block;
     width: 8em; }
+
+  .nav > li {
+    display: inline-block; }
 
   .title h1 {
     margin-top: 20px; }

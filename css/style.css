@@ -119,24 +119,11 @@ main {
   background-size: cover; }
 
 .flip-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-  -moz-transform: perspective(1000px);
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  position: relative;
   width: 100%; }
 
 .alternate-heading-color {
   color: rgba(0, 0, 0, 0.7); }
-
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
-  transform: rotateX(180deg); }
 
 .flip-container,
 .front,
@@ -144,54 +131,30 @@ main {
   margin-bottom: 20px;
   height: 150px; }
 
-.flipper {
-  transition: 0.6s;
-  text-align: center;
-  position: relative;
-  -moz-transform: perspective(1000px);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 100% 75px;
-  transform-origin: 100% 75px; }
-
 .front,
 .back {
   background-color: rgba(49, 84, 145, 0.7);
-  position: absolute;
   width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
   -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
-  transition: 0.6s; }
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s; }
 
-.front {
-  z-index: 2;
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
-  transform: rotateX(0deg); }
+.flip-container.hover-effect:hover .front {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg); }
+
+.flip-container.hover-effect:hover .back {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0); }
 
 .back {
   padding: 5px;
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
-  transform: rotateX(180deg); }
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg); }
 
 .skill-text {
   margin: auto; }
